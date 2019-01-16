@@ -1,0 +1,95 @@
+@font-face {
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: lighter;
+src: local('Bebas Neue'), url('./fonts/BebasNeue.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Changa:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+body{
+  background: #FF5F6D;  
+  background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  
+  background: linear-gradient(to right, #FFC371, #FF5F6D); 
+}
+
+a{
+  cursor:pointer;
+}
+
+p{
+  font-family: 'Changa', sans-serif;
+  color: #DA3746;
+  font-size: 18pt;
+  margin: 0;
+}
+
+.bgremover:focus, .bgremover:active{
+  background: none;
+}
+
+::placeholder{
+  color: #ca5858;
+  text-align: center;
+}
+
+.textareaInput,.textareaOutput{
+  outline: 0;
+  padding: 10px 10px 20px 10px;
+  resize: none;
+  color: #d22636;
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23pt;
+  width: 100%;
+}
+
+.textareaInput{
+  border: 0;
+  border-bottom: 1px solid rgba(218, 55, 70, 0.8);
+}
+
+.textareaOutput{
+  height: 150px;
+  border: 1px #DA3746 solid;
+  border-radius: 5px;
+  caret-color: transparent;
+}
+
+.loadingAnimation{
+  position: absolute;
+  left: 50%;
+  top: 68%;
+  transform: translate(-50%,-50%);
+}
+
+.countLength{
+  font-size: 10pt;
+  position: absolute;
+  right:25px;
+  bottom: 10px;
+}
+
+.borderAnimate{
+  transition: border-width 0.2s linear;
+}
+
+.borderAnimate:focus{ 
+  border-width: 8px; 
+}
+
+.buttonStyle{ 
+   border: 2px solid;
+   font-family: "Bebas Neue"; 
+   font-size: 18pt; 
+   font-weight: lighter; 
+   width: 210px; 
+}
+
+.dropdown-menu{
+  padding: 5px 13px 5px 0px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
